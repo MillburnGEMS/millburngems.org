@@ -145,3 +145,29 @@ nav .logo, nav .logo:hover, nav ul.links li, nav ul.links li:hover, nav ul.socia
 		display: none;
 	}
 }
+
+
+
+/* Page Headers */
+
+header {
+	width: 100%;
+	max-height: 600px;
+	padding: 100px;
+
+	h1 {
+		color: white;
+	}
+
+}
+
+@each $page in $pageList {
+	.header-#{$page} {
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/headers/#{$page}.jpg') no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+}
+
+
+
