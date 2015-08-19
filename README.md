@@ -9,12 +9,16 @@ gem install jekyll
 ```
 
 ## Compiling Jekyll Sites
-1. On the command line, `cd` into the directory `../../millburngems.org`, where you have this repository stored.
+1. On the command line, `cd` into the directory `../../millburngems.org`, wherever you have this repository stored.
+2. If there isn't one already, create a new directory at `/millburngems.org/_site`. But remember, don't `cd` into the directory.
+```
+mkdir _site
+```
 2. Run the following:
 ```
 jekyll serve --watch
 ```
-3. By default, this should start a server at `localhost:4000` (port 4000). Navigate to `localhost:4000` in a browser, such as Chrome, to view the site.
+3. By default, this compiles the Jekyll site and starts a server at `localhost:4000` (port 4000), serving the files under the `_site` directory. Navigate to `localhost:4000` in a browser, such as Chrome, to view the site.
 4. `--watch` makes it so that Jekyll constantly watches for and updates any changes that you make in the site's files while the server is running.
 5. To stop the server, use `^C` (control-C) to exit the process. Run `jekyll serve --watch` to start the server again when you need it.
 
@@ -24,3 +28,5 @@ So the site looks fabulous, but you want to get the files over to millburngems.o
 1. Download and install an FTP client, such as [FileZilla](https://filezilla-project.org/).
 2. Open FileZilla and Site Manager (command-S or File > Site Manager on Macs) to create and connect to a new site.
 3. You know where the credentials are :)
+4. The left side of FileZilla shows your local files; the right shows the server's files. Navigate to `../millburngems.org/_site` and drag and drop **only the files in /_site** over to the `/` directory on the right.
+5. Head over to [millburngems.org](http://millburngems.org) and admire the beauty of your work.
