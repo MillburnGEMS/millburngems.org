@@ -15,7 +15,7 @@ gem install jekyll
 jekyll serve --watch
 ```
 3. By default, this should start a server at `localhost:4000` (port 4000). Navigate to `localhost:4000` in a browser, such as Chrome, to view the site.
-4. `--watch` makes it so that Jekyll constantly watches for and updates any changes in the site's files that you make while the server is running.
+4. `--watch` makes it so that Jekyll constantly watches for and updates any changes that you make in the site's files while the server is running.
 5. To stop the server, use `^C` (control-C) to exit the process. Run `jekyll serve --watch` to start the server again when you need it.
 
 ## Transfer Files to millburngems.org
