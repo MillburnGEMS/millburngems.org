@@ -9,7 +9,7 @@ gem install jekyll
 ```
 
 ## Compiling Jekyll Sites
-1. On the command line, `cd` into the directory `.../.../millburngems.org`, where you have this repository stored.
+1. On the command line, `cd` into the directory `../../millburngems.org`, where you have this repository stored.
 2. Run the following:
 ```
 jekyll serve --watch
@@ -20,6 +20,7 @@ jekyll serve --watch
 
 ## Transfer Files to millburngems.org
 So the site looks fabulous, but you want to get the files over to millburngems.org. We'll do this over FTP (File Transport Protocol).
+
 1. Download and install an FTP client, such as [FileZilla](https://filezilla-project.org/).
 2. Open FileZilla and Site Manager (command-S or File > Site Manager on Macs) to create and connect to a new site.
 3. You know where the credentials are :)
