@@ -18,6 +18,7 @@ $device-width: 600px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "typography",
         "base",
         "layout"
 ;
