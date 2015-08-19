@@ -1,3 +1,4 @@
 <header class="{% if page.class %}header-{{ page.class }}{% endif %}">
 	<h1>{% if page.title %}{{ page.title }}{% else %}Untitled{% endif %}</h1>
+	{% if page.post %}<p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>{% endif %}
 </header>

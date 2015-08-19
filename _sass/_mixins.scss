@@ -31,3 +31,20 @@
  	-webkit-margin-start: $start;
  	-webkit-margin-end: $end;
  }
+
+
+ @mixin webkit-transition {
+ 	-webkit-transition: all 0.1s ease-out;
+  	-moz-transition: all 0.1s ease-out;
+  	transition: all 0.1s ease-out;
+ }
+
+ @mixin text-shadow($color) {
+ 	text-shadow: 0 1px 2px $color;
+ }
+
+ @mixin box-shadow($color, $type, $radius) {
+ 	-webkit-box-shadow: $type 0px 0px $radius $radius/2 $color;
+	-moz-box-shadow: type 0px 0px $radius $radius/2 $color;
+	box-shadow: $type 0px 0px $radius $radius/2 $color;
+ }

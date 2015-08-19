@@ -14,6 +14,11 @@
  a {
   	text-decoration: none;
   	color: $accent-color;
+  	@include webkit-transition;
+  	
+  	&:hover {
+  		@include text-shadow($accent-color);
+  	}
  }
 
  h1 {

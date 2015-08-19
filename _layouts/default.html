@@ -6,6 +6,7 @@
   <body class="{% if page.class %}{{ page.class }}{% endif %}">
 
   		{% if page.home %}
+        {% include overlay-alert.html %}
   			{% include home-header.html %}
   			{% include nav.html %}
   		{% else %}

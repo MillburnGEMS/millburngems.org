@@ -1,7 +1,24 @@
+function displayConstruction() {
+	$(".overlay").fadeIn(500);
+	$(".alert").show();
+
+	$(".alert .button").click(function() {
+		$(".overlay").fadeOut(500);
+		$(".alert").hide();
+	});
+
+	$(".overlay").click(function() {
+		$(".overlay").fadeOut(500);
+		$(".alert").hide();
+	});
+}
+
 $(window).load(
 	function() {
 
 		$(window).scrollTop(0);
+
+		displayConstruction();
 
 		$(window).resize(function() {
 			$('nav ul.links li, nav ul.social').removeAttr('style');

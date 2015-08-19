@@ -2,6 +2,62 @@
  * Use this stylesheet for other elements.
  */
 
+ *:hover {
+ 	@include webkit-transition();
+ }
+
+/* Overlay and Alert */
+
+.overlay {
+	width: 100%; height: 100%;
+	position: fixed;
+	opacity: 0.75;
+	background-color: black;
+	z-index: 1;
+	display: none;
+}
+
+.alert {
+	max-width: 500px;
+	background-color: $background-color;
+	padding: 50px;
+	@include center-on-page();
+	z-index: 2;
+	display: none;
+
+	p {
+		font-size: $base-font-size * 1.25;
+	}
+
+	input, .button {
+		margin: 5px;
+		font-family: $base-font-family-bold;
+		font-size: $base-font-size;
+		border-radius: 5px;
+		padding: 15px;
+		outline: none;
+	}
+
+	input {
+		border: 1px solid lighten($text-color, 80%);
+		&:focus {
+			@include box-shadow(lighten($text-color, 80%), inset, 5px)
+		}
+	}
+
+	.button {
+		outline: none;
+		background-color: $accent-color;
+		color: white;
+		@include webkit-transition();
+
+		&:hover {
+			cursor: pointer;
+			background-color: darken($accent-color, 10%);
+		}
+	}
+}
+
 
 /* Homepage */
 
@@ -24,6 +80,9 @@
 
 	 		h1 {
 	 			color: $text-color;
+	 			&:hover {
+	 				text-shadow: none;
+	 			}
 	 		}
 
 	 		img {
@@ -67,11 +126,22 @@ nav {
 	.logo  {
 		font-size: $base-font-size * 1.5;
 		font-family: $base-font-family-bold;
-		padding: 15px 25px;
+		padding: 15px 5px 15px 25px;
+
+		a {
+			@include webkit-transition();
+			&:hover {
+				color: lighten($accent-color, 40%);
+			}
+		}
+
 	}
 
 	a {
 		color: $background-color;
+		&:hover {
+			text-shadow: none;
+		}
 	}
 
 	ul {
@@ -102,6 +172,7 @@ nav {
 			border-radius: 5px;
 			margin: 2px;
 			color: $background-color;
+			@include webkit-transition();
 
 			&:hover {
 				background-color: $background-color;
@@ -117,6 +188,7 @@ nav {
 
 		li {
 			padding: 5px;
+			@include webkit-transition();
 
 			&:hover {
 				a {
@@ -126,12 +198,6 @@ nav {
 		}
 	}
 
-}
-
-nav .logo, nav .logo:hover, nav ul.links li, nav ul.links li:hover, nav ul.social li, nav ul.social li:hover {
-	-webkit-transition: all 0.1s ease-out;
-  	-moz-transition: all 0.1s ease-out;
-  	transition: all 0.1s ease-out;
 }
 
 @media screen and (max-width: $device-width) {
@@ -153,12 +219,10 @@ nav .logo, nav .logo:hover, nav ul.links li, nav ul.links li:hover, nav ul.socia
 header {
 	width: 100%;
 	max-height: 500px;
-	padding: 150px;
-
-	h1 {
-		color: white;
-	}
-
+	text-align: center;
+	padding: 150px 0;
+	background: $text-color;
+	color: white;
 }
 
 @each $page in $pageList {
@@ -181,6 +245,32 @@ header {
 	}
 }
 
+/* Posts */
+
+.posts {
+	width: 100%;
+	padding-top: 50px;
+}
+
+.post {
+	max-width: 800px;
+	margin: auto;
+	padding: 25px;
+
+	h2 {
+		color: $text-color;
+		@include webkit-transition();
+
+		&:hover {
+			@include text-shadow($text-color);
+		}
+	}
+}
+
+.divider {
+	border-bottom: 1px solid lighten($text-color, 80%);
+	padding-top: 25px;
+}
 
 
 

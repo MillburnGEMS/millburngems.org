@@ -3,3 +3,31 @@ layout: default
 title: News
 class: news
 ---
+
+<div class="posts">
+
+{% for post in site.posts %}
+    {% if post.render != false %}
+
+    	<div class="post">
+
+		  <a href="{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
+
+
+		  <article class="post-content">
+		    {{ post.content | split:'<!--break-->' | first }}
+			{% if post.content contains '<!--break-->' %}
+			    <a href="{{ post.url }}">Read More</a>
+			{% endif %}
+		  </article>
+
+		  <div class="divider"></div>
+
+		  <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+
+		</div>
+
+    {% endif %}
+{% endfor %}
+
+</div>
