@@ -1,3 +1,13 @@
 /**
  * Use this stylesheet to define custom font families.
  */
+
+ @font-face {
+ 	font-family: 'Avenir Next';
+ 	src: url('../fonts/AvenirNext-Regular.ttf') format('truetype');
+ }
+
+ @font-face {
+ 	font-family: 'Avenir Next Light';
+ 	src: url('../fonts/AvenirNext-UltraLight.ttf') format('truetype');
+ }

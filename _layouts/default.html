@@ -5,9 +5,8 @@
 
   <body class="{% if page.class %}{{ page.class }}{% endif %}">
 
-    
+  		{% if page.home %}{% include home-header.html %}{% else %}{% include header.html %}{% endif %}
 
-    	{% include header.html %}
     	{% include nav.html %}
 
     	<div class="content">

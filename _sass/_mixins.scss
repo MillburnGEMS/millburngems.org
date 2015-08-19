@@ -1,0 +1,33 @@
+/**
+ * Use this stylesheet to define mixins, or sets of styles.
+ */
+
+ @mixin center-on-page {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+ }
+
+
+ @mixin disable-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+ }
+
+
+ @mixin set-webkit-margin($before, $after, $start, $end) {
+ 	-webkit-margin-before: $before;
+ 	-webkit-margin-after: $after;
+ 	-webkit-margin-start: $start;
+ 	-webkit-margin-end: $end;
+ }
