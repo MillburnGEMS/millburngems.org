@@ -19,7 +19,7 @@ jekyll serve --watch
 5. To stop the server, use `^C` (control-C) to exit the process. Run `jekyll serve --watch` to start the server again when you need it.
 
 ## Transfer Files to millburngems.org
-So the site looks fabulous, but you want to get the files over to millburngems.org. We'll do this over FTP (File Transport Protocol).
+So the site looks fabulous, but you want to get the files over to millburngems.org. We'll do this over FTP (File Transfer Protocol).
 
 1. Download and install an FTP client, such as [FileZilla](https://filezilla-project.org/).
 2. Open FileZilla and Site Manager (command-S or File > Site Manager on Macs) to create and connect to a new site.
