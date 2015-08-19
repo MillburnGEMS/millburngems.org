@@ -5,6 +5,10 @@
 
 /* Homepage */
 
+#particles-js {
+	@include disable-select();
+}
+
 
 .home {
 	overflow: hidden;
