@@ -80,9 +80,6 @@
 
 	 		h1 {
 	 			color: $text-color;
-	 			&:hover {
-	 				text-shadow: none;
-	 			}
 	 		}
 
 	 		img {
@@ -223,6 +220,7 @@ header {
 	padding: 150px 0;
 	background: $text-color;
 	color: white;
+	@include disable-select();
 }
 
 @each $page in $pageList {

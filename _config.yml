@@ -9,3 +9,6 @@ github_username:  shannonpeng
 
 # Build settings
 markdown: kramdown
+
+permalink:     /news/:year/:month/:day/:title.html
+paginate_path: /page-:num
