@@ -19,11 +19,11 @@ mkdir _site
 jekyll serve --watch
 ```
 3. By default, this compiles the Jekyll site and starts a server at `localhost:4000` (port 4000), serving the files under the `_site` directory. Navigate to `localhost:4000` in a browser, such as Chrome, to view the site.
-4. `--watch` makes it so that Jekyll constantly watches for and updates any changes that you make in the site's files while the server is running.
+4. The `--watch` switch tells Jekyll to constantly watch for and update any changes that you make in the site's files while the server is running.
 5. To stop the server, use `^C` (control-C) to exit the process. Run `jekyll serve --watch` to start the server again when you need it.
 
-## Transfer Files to millburngems.org
-So the site looks fabulous, but you want to get the files over to millburngems.org. We'll do this over FTP (File Transfer Protocol).
+## Transfer Files to Server
+So the site looks fabulous, but you want to see it live at millburngems.org. We'll do this over FTP (File Transfer Protocol).
 
 1. Download and install an FTP client, such as [FileZilla](https://filezilla-project.org/).
 2. Open FileZilla and Site Manager (command-S or File > Site Manager on Macs) to create and connect to a new site.
