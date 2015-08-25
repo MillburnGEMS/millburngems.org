@@ -2,8 +2,8 @@
 Official website of Millburn GEMS.
 
 ## Installing Jekyll
-1. On a Windows: Check out Julian Thilo's awesome tutorial [here](http://jekyll-windows.juthilo.com/).
-2. On a Mac: Install RubyGems [here](https://rubygems.org/pages/download). Then, open Terminal and run the following:
+1. Windows: Check out Julian Thilo's awesome tutorial [here](http://jekyll-windows.juthilo.com/).
+2. Mac: Install RubyGems [here](https://rubygems.org/pages/download). Then, open Terminal and run the following:
 ```
 gem install jekyll
 ```
