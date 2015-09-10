@@ -80,6 +80,7 @@
 
 	 		h1 {
 	 			color: $text-color;
+	 			font-weight: normal;
 	 		}
 
 	 		img {
@@ -119,11 +120,11 @@ nav {
 	width: 100%;
 	background-color: $accent-color;
 	color: $background-color;
+	font-family: $base-font-family-bold;
 
 	.logo  {
 		font-size: $base-font-size * 1.5;
-		font-family: $base-font-family-bold;
-		padding: 15px 5px 15px 25px;
+		padding: 15px 0px;
 
 		a {
 			@include webkit-transition();
@@ -145,6 +146,10 @@ nav {
 		list-style-type: none;
 		padding: 5px;
 		margin: 0;
+	}
+
+	ul.nav-elements {
+		padding-left: 25px;
 	}
 
 	li {
@@ -207,6 +212,10 @@ nav {
 	nav ul.links li, nav ul.social {
 		display: none;
 	}
+
+	nav ul.nav-elements {
+		padding-left: 5px;
+	}
 }
 
 
@@ -221,6 +230,10 @@ header {
 	background: $text-color;
 	color: white;
 	@include disable-select();
+
+	h1 {
+		font-size: 500%;
+	}
 }
 
 @each $page in $pageList {
@@ -239,8 +252,18 @@ header {
 		h1 {
 			margin: auto;
 			text-align: center;
+			font-size: 200%;
 		}
 	}
+}
+
+/* Page Content */
+
+.content {
+	font-size: 150%;
+	max-width: 80%;
+	padding: 50px;
+	margin: auto;
 }
 
 /* Posts */

@@ -18,7 +18,7 @@ $(window).load(
 
 		$(window).scrollTop(0);
 
-		displayConstruction();
+		//displayConstruction();
 
 		$(window).resize(function() {
 			$('nav ul.links li, nav ul.social').removeAttr('style');
