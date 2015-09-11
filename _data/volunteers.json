@@ -1,0 +1,57 @@
+{
+  "becky": {
+    "name": "Becky Barber",
+    "first_name": "Becky",
+    "image": "/img/team/becky.jpg",
+    "email": "becky@millburngems.org",
+    "bio": "is a senior at Millburn High School who wants to study either math, physics, or engineering in college. Her favorite subjects are math and physics. Also, she was introduced to mechanical engineering this past summer at the Women’s Technology Program and loved it! Outside of school, Becky ice-skates competitively for Team USA as a member of the Synchroettes Junior Team. She also enjoys tutoring others in math. In school, Becky is co-president of the Math Club, a member of the Science Bowl team, and president of the Skating Club."
+  },
+
+  "sofia": {
+    "name": "Sofia Fernandez",
+    "first_name": "Sofia",
+    "image": "/img/team/sofia.jpg",
+    "email": "sofia@millburngems.org",
+    "bio": "is a senior at Millburn High School. She is interested in studying business, along with either Computer Science or Cybersecurity. Some of her passions are coding, playing around with Arduino, learning languages (Spanish, Chinese, French and German), singing and dancing. Sofia has attended a Computer Science summer course at Stevens Institute of Technology and various hackathons. Outside of school, Sofia is a passionate member of New Jersey Youth Chorus, Key Club, Millburn GEMS and Language Ambassadors."
+  },
+
+  "sukhmani": {
+    "name": "Sukhmani Minhas",
+    "first_name": "Sukhmani",
+    "image": "/img/team/sukhmani.jpg",
+    "email": "sukhmani@millburngems.org",
+    "bio": "Sukhmani is a senior at Millburn High School. While still narrowing down her interests, she enjoys computer science, business, and math. She was inspired to start GEMS after experiencing the gender imbalance of computer science students at MHS. She loves using her interests to find applications to real world problems. One of her favorite experiences was interning at a physics lab where she built and programmed a confocal microscopy system from scratch. Among her favorite hobbies is astronomy, which she immerses herself in frequently at a local observatory. She is beginning her second year as a starter on the fencing team and is part of Key Club and the French Magazine."
+  },
+
+  "swathi": {
+    "name": "Swathi Nachi",
+    "first_name": "Swathi",
+    "image": "/img/team/swathi.jpg",
+    "email": "swathi@millburngems.org",
+    "bio": "is a senior at Millburn High School who wants to study engineering and business in college. Outside of school, she loves to run and bike (she is the captain of the Track Hurdling team at MHS). She also loves to draw and paint, as well as play her violin and flute. In addition, she is an officer of the MHS Peer Leaders, and is the lead conductor of the MHS Fall Band. She recently became part of the Youth Board at YSB, a digital platform to spread positivity amongst young women, as well as Dojima LLC (a financial technology firm), where she helped with the marketing and branding efforts."
+  },
+
+  "shannon": {
+    "name": "Shannon Peng",
+    "first_name": "Shannon",
+    "image": "/img/team/shannon.jpg",
+    "email": "shannon@millburngems.org",
+    "bio": "is a senior at Millburn High School who wants to study computer science. She is especially interested in artificial intelligence, human-computer interaction, and product design. In 2014, she cofounded Millburn GEMS, aiming to build a supportive community of girls passionate about STEM. Outside of school, dedicates her time to Key Club, FTC Robotics, and attends hackathons - this fall, she is on the organizing team for HackMHS. In her free time, Shannon loves to sing, play guitar, listen to music, and obsess over film scores and visual effects."
+  },
+
+  "melissa": {
+    "name": "Melissa Wang",
+    "first_name": "Melissa",
+    "image": "/img/team/melissa.jpg",
+    "email": "melissa@millburngems.org",
+    "bio": "is a senior at Millburn High School who wants to study engineering in college. She is currently part of the FTC Robotics team and has taken robotics courses at Columbia University. Melissa also has experience with the marketing side of engineering, having interned at an internet security company. Outside of her STEM field interests, Melissa enjoys creating art and is in her 3rd year of AP art."
+  },
+
+  "asena": {
+    "name": "Asena Yildiz",
+    "first_name": "Asena",
+    "image": "/img/team/asena.jpg",
+    "email": "adyhowle@millburngems.org",
+    "bio": "is a senior at Millburn High School who wants to study engineering in college, either biomedical or mechanical engineering. After starting a product company at MIT, Asena fell in love with product design and innovation. “Makerspaces are my home.” Outside of school, Asena works on writing novels, shoots archery, and works to inspire students to pursue their passions and bring their ideas to life. At school, Asena is part of Advanced Robotics and the FTC Robotics team, while also leading an entrepreneurial club, ASPIRE Club, which is partnered with MIT Launch."
+  }
+}

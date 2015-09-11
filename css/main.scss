@@ -14,10 +14,12 @@ $background-color: white;
 $accent-color:     #3DC98C;
 
 // Width of the content area
-$device-width: 900px;
+$device-width: 1000px;
+
+$spacing-unit: 30px;
 
 // Page List
-$pageList: our-mission news projects media contact-us;
+$pageList: our-mission news hartshorn media contact-us;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

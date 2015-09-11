@@ -29,33 +29,37 @@
 		font-size: $base-font-size * 1.25;
 	}
 
-	input, .button {
+	input {
 		margin: 5px;
 		font-family: $base-font-family-bold;
 		font-size: $base-font-size;
 		border-radius: 5px;
 		padding: 15px;
 		outline: none;
-	}
-
-	input {
 		border: 1px solid lighten($text-color, 80%);
 		&:focus {
 			@include box-shadow(lighten($text-color, 80%), inset, 5px)
 		}
 	}
 
-	.button {
-		outline: none;
-		background-color: $accent-color;
-		color: white;
-		@include webkit-transition();
+}
 
-		&:hover {
-			cursor: pointer;
-			background-color: darken($accent-color, 10%);
-		}
+.button {
+	outline: none;
+	background-color: $accent-color;
+	color: white;
+	margin: 5px;
+	font-family: $base-font-family-bold;
+	font-size: $base-font-size;
+	border-radius: 5px;
+	padding: 15px;
+	@include webkit-transition();
+
+	&:hover {
+		cursor: pointer;
+		background-color: darken($accent-color, 10%);
 	}
+
 }
 
 
@@ -81,6 +85,8 @@
 	 		h1 {
 	 			color: $text-color;
 	 			font-weight: normal;
+	 			line-height: $base-font-size * 3.5;
+	 			margin-top: 25px;
 	 		}
 
 	 		img {
@@ -244,15 +250,23 @@ header {
 	}
 }
 
+.post-page {
+	header {
+		p {
+			font-size: $base-font-size * 2;
+		}
+	}
+}
+
 @media screen and (max-width: $device-width) {
 
 	header {
-		padding: 50px 0;
+		padding: 80px 0;
 
 		h1 {
 			margin: auto;
 			text-align: center;
-			font-size: 200%;
+			font-size: 300%;
 		}
 	}
 }
@@ -293,5 +307,160 @@ header {
 	padding-top: 25px;
 }
 
+/* Our Mission */
+
+.our-mission {
+
+	.content > p {
+		max-width: 75%;
+		font-size: $base-font-size * 1.75;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	p {
+		margin: $spacing-unit auto;
+	}
+
+	ul.volunteers {
+		padding-left: 0;
+
+		li {
+			margin: 100px;
+		}
+
+		i {
+			font-size: 300%;
+			float: center;
+			margin: auto;
+		}
+
+	}
+
+	ul.volunteers .portrait {
+		width: 250px; height: 250px;
+		border-radius: 50%;
+		border: 10px solid $accent-color;
+		background-size: cover;
+		background-position: 50% 50%;
+		opacity: 1;
+	}
+
+	ul.volunteers li:nth-child(odd) {
+		.portrait {
+			float: left;
+			margin-right: $spacing-unit * 1.5;
+			margin-bottom: $spacing-unit;
+		}
+	}	
+	ul.volunteers li:nth-child(even)  {
+
+		h2, p, a {
+			text-align: right;
+		}
+
+		.portrait {
+			float: right;
+			margin-left: $spacing-unit * 1.5;
+			margin-bottom: $spacing-unit;
+		}
+
+	}
+
+}
 
 
+@media screen and (max-width: $device-width) {
+
+	.our-mission {
+
+		.content {
+			width: 100%;
+			margin: 0;
+		}
+
+		.content > p, ul.volunteers li {
+			max-width: 100%;
+			margin: auto;
+		}
+
+		ul.volunteers .portrait {
+			width: 100px; height: 100px;
+			margin-bottom: 50px !important;
+		}
+		ul.volunteers li:nth-child(even) {
+			h2, p, a {
+				text-align: left;
+			}
+		}
+	}
+
+}
+
+
+/* Hartshorn Page */
+
+.hartshorn {
+
+	.content {
+		margin: 0; padding: 0;
+		max-width: 100%;
+		margin-top: $spacing-unit * 3;
+
+		p {
+			max-width: 60%;
+			margin: $spacing-unit auto;
+		}
+
+		.map {
+			margin-top: $spacing-unit * 3;
+		}
+
+		.button {
+			max-width: 500px;
+			font-size: $base-font-size * 2;
+			margin: $spacing-unit*2 auto;
+			text-align: center;
+		}
+	}
+}
+
+
+/* Media Page */
+
+.media {
+
+	h1 {
+		margin: auto;
+		text-align: center;
+		font-weight: normal;
+	}
+}
+
+/* Contact Us Page */
+
+.contact-us {
+	.content a, .content h1 {
+		font-weight: normal;
+		text-align: center;
+		margin: auto;
+		color: $text-color;
+	}
+	.content i {
+		padding: $spacing-unit;
+	}
+}
+
+@media screen and (max-width: $device-width) {
+
+	.contact-us {
+
+		.content h1 {
+			font-size: $base-font-size * 1.5;
+		}
+
+	}
+
+}

@@ -4,3 +4,20 @@ title: Our Mission
 class: our-mission
 ---
 
+<p>While women comprise <b>46.7%</b> of the US workforce, they represent <b>only 29%</b> of individuals working in STEM fields (Science, Technology, Engineering, and Mathematics). The gender gap in STEM is a problem with deep roots in society's stereotypes and expectations. And it begins at a very young age.</p>
+
+<p>In 2014, Millburn GEMS started out as a small group of female MHS students. They stood up and decided that nothing should stand in the way of girls wanting to follow their love for STEM. Soon, it grew into a community filled with girls empowering each other to make a difference.</p>
+
+<p>Millburn GEMS aims to build a supportive community, connecting girls from the elementary to high school, in Millburn Township and beyond.</p>
+
+<ul class="volunteers">
+{% for volunteer in site.data.volunteers %}
+	<li>
+		<a href="mailto:{{ volunteer[1].email }}"><div style="background-image: url('{{ volunteer[1].image }}')"class="portrait"></div></a>
+		
+		<h2>{{ volunteer[1].name }}</h2>
+		<p>{{ volunteer[1].first_name }} {{ volunteer[1].bio }}</p>
+		
+	</li>
+{% endfor %}
+</ul>
