@@ -34,9 +34,9 @@
 
 
  @mixin webkit-transition {
- 	-webkit-transition: all 0.1s ease-out;
-  	-moz-transition: all 0.1s ease-out;
-  	transition: all 0.1s ease-out;
+ 	-webkit-transition: all 0.2s ease-out;
+  	-moz-transition: all 0.2s ease-out;
+  	transition: all 0.2s ease-out;
  }
 
  @mixin text-shadow($color) {

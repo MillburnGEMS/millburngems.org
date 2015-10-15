@@ -176,17 +176,15 @@ nav {
 	ul.links {
 
 		li  {
-			padding: 12px;
-			border-radius: 5px;
-			margin: 2px;
+			padding-bottom: 8px;
+			border-bottom: 2px solid transparent;
+			margin: 14px;
+			margin-bottom: 4px;
 			color: $background-color;
 			@include webkit-transition();
 
 			&:hover {
-				background-color: $background-color;
-				a {
-					color: $accent-color;
-				}
+				border-bottom: 2px solid white;
 			}
 		}
 	}
