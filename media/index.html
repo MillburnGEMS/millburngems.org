@@ -4,4 +4,19 @@ title: Media
 class: media
 ---
 
-<h1>Sorry! No pictures yet :(</h1>
+<link href="/css/lightbox.css" rel="stylesheet" />
+<script src="/js/lightbox.js" type="text/javascript"></script>
+
+{% for gallery in site.data.galleries %}
+    <h1>{{ gallery.id }}</h1>
+    <p>{{ gallery.description }}</p>
+    <ul class="gallery">
+    {% for image in gallery.images %}
+      <li>
+        <a href="{{ gallery.imagefolder }}/{{ image.name }}.jpeg" data-lightbox="{{ gallery.id }}">
+          <img class="thumbnail" src="{{ gallery.imagefolder }}/{{ image.name }}-min.jpeg">
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+{% endfor %}

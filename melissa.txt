@@ -1,0 +1,8 @@
+"melissa": {
+    "name": "Melissa Wang",
+    "first_name": "Melissa",
+    "title": "Mentor",
+    "image": "/img/team/melissa.jpg",
+    "email": "melissa@millburngems.org",
+    "bio": "is a senior at Millburn High School who wants to study engineering in college. She is currently part of the FTC Robotics team and has taken robotics courses at Columbia University. Melissa also has experience with the marketing side of engineering, having interned at an internet security company. Outside of her STEM field interests, Melissa enjoys creating art and is in her 3rd year of AP art."
+  }

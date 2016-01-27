@@ -177,14 +177,14 @@ nav {
 
 		li  {
 			padding-bottom: 8px;
-			border-bottom: 2px solid transparent;
+			border-bottom: 4px solid transparent;
 			margin: 14px;
 			margin-bottom: 4px;
 			color: $background-color;
 			@include webkit-transition();
 
 			&:hover {
-				border-bottom: 2px solid white;
+				border-bottom: 4px solid white;
 			}
 		}
 	}
@@ -436,7 +436,7 @@ header {
 			font-size: $base-font-size * 2;
 			margin: $spacing-unit*2 auto;
 			text-align: center;
-			background: #dddddd;
+			background: $accent-color;
 			&:hover {
 				cursor: default;
 			}
@@ -449,11 +449,27 @@ header {
 
 .media {
 
-	h1 {
+	.content h1 {
 		margin: auto;
 		text-align: center;
 		font-weight: normal;
 	}
+
+	p {
+		text-align: center;
+	}
+
+	ul.gallery {
+		margin: auto;
+		text-align: center;
+		li {
+			display: inline-block;
+			img.thumbnail {
+				height: 200px;
+			}
+		}
+	}
+
 }
 
 /* Contact Us Page */
