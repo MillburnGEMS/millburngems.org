@@ -438,7 +438,7 @@ header {
 			text-align: center;
 			background: $accent-color;
 			&:hover {
-				cursor: default;
+				background: darken($accent-color, 10%);
 			}
 		}
 	}
