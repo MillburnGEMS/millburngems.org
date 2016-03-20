@@ -16,8 +16,8 @@ The girls then made their own beautiful play-doh models of an animal cell, compl
 And it’s watching the girls have fun, learn, share, be enthusiastic and creative, that makes it all worth it. 
 
 
-<center><img height="400px" src="/img/blog/mfwag-1.png"></center>
-<center><img width="400px" src="/img/blog/mfwag-3.png"></center>
+<center><img height="400px" src="/img/blog/mfwag-1.jpg"></center>
+<center><img width="400px" src="/img/blog/mfwag-3.jpg"></center>
 
 There is so much more to learn! To review and learn more about all the intracellular organelles and their functions, here are some websites and online resources to take a look at. 
 
