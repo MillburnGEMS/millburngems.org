@@ -293,10 +293,16 @@ header {
 	h2 {
 		color: $text-color;
 		@include webkit-transition();
+		margin: auto;
 
 		&:hover {
 			@include text-shadow($text-color);
 		}
+	}
+
+	h3 {
+		margin: auto;
+		font-weight: normal;
 	}
 }
 
